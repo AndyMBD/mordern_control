@@ -30,14 +30,15 @@ $
 \end{array}
 $
 
-If the back EMF observer fulfils the conditions  $\left|e_{\alpha \beta(k+1)}-e_{\alpha \beta(k)}\right| \leq m $ and  $g \in(0,1)$ , there exists a $ K_{0}$, such that:\
-$\tilde{e}_{\alpha \beta(k)} \leq \frac{m}{g} $ \
+If the back EMF observer fulfils the conditions  $e_{\alpha \beta(k+1)}-e_{\alpha \beta(k)}$ and  $g \in(0,1)$ , there exists a $K_{0}$, such that:  
+$\tilde{e}_{\alpha \beta(k)} \leq \frac{m}{g}$
+
 If the sliding mode observer fulfils these conditions:
 - $g \in(0,1)$
-- $\left|e_{\alpha \beta(k+1)}-e_{\alpha \beta(k)}\right| \leq m $
+- $e_{\alpha \beta(k+1)}-e_{\alpha \beta(k)}\right| \leq m $
 - $\eta>b \frac{m}{g} $ <br>
 then there exists a $k=k_{0}$, such that for $k \geqslant k_{0}$ 
-$\left|\tilde{i}_{\alpha \beta(k)}\right| \leq\eta+b \frac{m}{g} $ 
+$\tilde{i}_{\alpha \beta(k)}\right| \leq\eta+b \frac{m}{g} $ 
 
 where:
 * $e_{\alpha}$ and $i_{\alpha}$ are the stator back EMF and current for the $\alpha$ axis
@@ -57,7 +58,7 @@ Use these steps to tune the block using the Current observer gain $\eta$ and Bac
 
 * Select a back-emf observer gain ($g$) value such that $g \in(0,1)$. Bringing g close to the value 1, results in less error in the estimated back-emf. However, this makes convergence slow.
 
-* Select a value of $m$ based on the block sample time and maximum slope of the operating back-emf (such that $\left|e_{\alpha \beta(k+1)}-e_{\alpha \beta(k)}\right| \leq m $)
+* Select a value of $m$ based on the block sample time and maximum slope of the operating back-emf (such that $e_{\alpha \beta(k+1)}-e_{\alpha \beta(k)}\right| \leq m $)
 
 * Select a current observer gain ($\eta$) value based on $b$, $m$, and $g$ (such that $\eta>b \frac{m}{g} $).
 
