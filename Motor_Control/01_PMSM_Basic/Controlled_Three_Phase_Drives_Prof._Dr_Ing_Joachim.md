@@ -251,24 +251,7 @@ $
         0&-\frac{\sqrt{3}}{2} \\
     \end{bmatrix}    
 $
-
-
-```python
-import numpy as np
-a = np.array([[1,0,0],[0,np.sqrt(3)/2,-np.sqrt(3)/2]])
-print("a = \n",a)
-b=np.transpose(a)
-print("b = \n",b)
-```
-
-    a = 
-     [[ 1.         0.         0.       ]
-     [ 0.         0.8660254 -0.8660254]]
-    b = 
-     [[ 1.         0.       ]
-     [ 0.         0.8660254]
-     [ 0.        -0.8660254]]
-    
+   
 
 ### Inverse Clark Transfer
 
